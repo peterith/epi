@@ -14,5 +14,6 @@ int main() {
   std::cout << swap_bits(1, 0, 2) << std::endl;  // 4
   std::cout << swap_bits(2, 0, 1) << std::endl;  // 1
   std::cout << swap_bits(5, 0, 1) << std::endl;  // 6
+  std::cout << swap_bits(9, 3, 2) << std::endl;  // 5
   return 0;
 }

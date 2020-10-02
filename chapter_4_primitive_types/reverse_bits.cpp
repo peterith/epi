@@ -1,6 +1,8 @@
 #include <iostream>
 #include <limits>
 
+// n = input size, L = cache word size
+
 // time: O(n/L), space: O(L^2)
 // use lookup table
 unsigned long reverse_bits(unsigned long x) {

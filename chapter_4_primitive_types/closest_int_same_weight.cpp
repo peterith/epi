@@ -1,6 +1,8 @@
 #include <iostream>
 #include <limits>
 
+// n = input size
+
 // time: O(n), space: O(1)
 // flip two rightmost consecutive bits that differ
 unsigned long closest_int_same_weight_1(unsigned long x) {
@@ -30,16 +32,16 @@ unsigned long closest_int_same_weight_2(unsigned long x) {
 int main() {
   unsigned long ul_max = std::numeric_limits<unsigned long>::max();
 
+  std::cout << "closest_int_same_weight_1" << std::endl;
   std::cout << closest_int_same_weight_1(0) << std::endl;      // throw exception
   std::cout << closest_int_same_weight_1(ul_max) << std::endl; // throw exception
-  std::cout << closest_int_same_weight_1(2) << std::endl;      // 1
   std::cout << closest_int_same_weight_1(5) << std::endl;      // 6
   std::cout << closest_int_same_weight_1(7) << std::endl;      // 11
   std::cout << closest_int_same_weight_1(10) << std::endl;     // 9
 
+  std::cout << "closest_int_same_weight_2" << std::endl;
   std::cout << closest_int_same_weight_2(0) << std::endl;      // throw exception
   std::cout << closest_int_same_weight_2(ul_max) << std::endl; // throw exception
-  std::cout << closest_int_same_weight_2(2) << std::endl;      // 1
   std::cout << closest_int_same_weight_2(5) << std::endl;      // 6
   std::cout << closest_int_same_weight_2(7) << std::endl;      // 11
   std::cout << closest_int_same_weight_2(10) << std::endl;     // 9

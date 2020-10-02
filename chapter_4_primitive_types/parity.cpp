@@ -1,5 +1,7 @@
 #include <iostream>
 
+// n = input size, L = cache word size, k = number of 1s
+
 // time: O(n), space: O(1)
 // iterate and flip result if bit is 1
 int parity_1(unsigned long x) {
@@ -11,7 +13,7 @@ int parity_1(unsigned long x) {
   return result;
 }
 
-// time: O(n), space: O(1)
+// time: O(k), space: O(1)
 // use bit manipulation trick to shorten iteration
 int parity_2(unsigned long x) {
   int result = 0;
@@ -47,23 +49,31 @@ int parity_4(unsigned long x) {
 }
 
 int main() {
+  std::cout << "parity_1" << std::endl;
   std::cout << parity_1(0) << std::endl;  // 0
   std::cout << parity_1(1) << std::endl;  // 1
   std::cout << parity_1(5) << std::endl;  // 0
   std::cout << parity_1(11) << std::endl; // 1
+  std::cout << parity_1(15) << std::endl; // 0
 
+  std::cout << "parity_2" << std::endl;
   std::cout << parity_2(0) << std::endl;  // 0
   std::cout << parity_2(1) << std::endl;  // 1
   std::cout << parity_2(5) << std::endl;  // 0
   std::cout << parity_2(11) << std::endl; // 1
+  std::cout << parity_2(15) << std::endl; // 0
 
+  std::cout << "parity_3" << std::endl;
   std::cout << parity_3(0) << std::endl;  // 0
   std::cout << parity_3(1) << std::endl;  // 1
   std::cout << parity_3(5) << std::endl;  // 0
   std::cout << parity_3(11) << std::endl; // 1
+  std::cout << parity_3(15) << std::endl; // 0
 
+  std::cout << "parity_4" << std::endl;
   std::cout << parity_4(0) << std::endl;  // 0
   std::cout << parity_4(1) << std::endl;  // 1
   std::cout << parity_4(5) << std::endl;  // 0
   std::cout << parity_4(11) << std::endl; // 1
+  std::cout << parity_4(15) << std::endl; // 0
 }
