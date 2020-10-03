@@ -1,6 +1,6 @@
 #include <iostream>
 
-// n = input size, L = cache word size, k = number of 1s
+// n = number of input bits, L = number of lookup table key bits, k = number of input 1s
 
 // time: O(n), space: O(1)
 // iterate and flip result if bit is 1

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <limits>
 
-// n = input size, L = cache word size
+// n = number of input bits, L = number of lookup table key bits
 
 // time: O(n/L), space: O(L^2)
 // use lookup table

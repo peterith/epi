@@ -1,7 +1,7 @@
 #include <iostream>
 #include <limits>
 
-// n = input size
+// n = number of input bits
 
 // time: O(n), space: O(1)
 // flip two rightmost consecutive bits that differ
@@ -16,7 +16,7 @@ unsigned long closest_int_same_weight_1(unsigned long x) {
 }
 
 // time: O(1), space: O(1)
-// use bits manupulation tricks to find the first rightmost bit that differ
+// use bits manupulation tricks to find first rightmost bit that differ
 unsigned long closest_int_same_weight_2(unsigned long x) {
   unsigned long lowest_set_bit = x & ~(x - 1);
   unsigned long lowest_unset_bit = ~x & (x + 1);
